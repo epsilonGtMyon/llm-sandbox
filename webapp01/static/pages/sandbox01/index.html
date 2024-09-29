@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox01</title>
+    <script type="module" defer src="./script.js"></script>
+    <style>
+      .question {
+        width: 80vw;
+        min-height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>単純な質問</h1>
+      <div>
+        <p>
+          RAGやチャット履歴などは使わずそのままLLMに話しかけるだけ
+        </p>
+      </div>
+
+      <div>
+        <div>
+          <div>
+            <textarea id="question" class="question"></textarea>
+          </div>
+          <div>
+            <button id="executeQuestion">質問</button>
+          </div>
+        </div>
+        <hr />
+        <div id="responseArea"></div>
+      </div>
+    </main>
+  </body>
+</html>
